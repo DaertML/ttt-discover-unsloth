@@ -1,5 +1,7 @@
 # ttt-discover-unsloth
-An implementation of the TTT Discover paper using unsloth
+An implementation of the TTT Discover paper using unsloth. The ideas from this work come from this video and this paper:
+- https://www.youtube.com/watch?v=JgB_ywOmGCc&t=2013s
+- https://arxiv.org/abs/2601.16175
 
 # Introduction
 

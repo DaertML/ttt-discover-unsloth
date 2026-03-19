@@ -1,0 +1,22 @@
+# TTT-Discover — Unsloth edition
+#
+# Install order matters. Do these steps in sequence:
+#
+# Step 1 — PyTorch with CUDA (pick your CUDA version):
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+#
+# Step 2 — Unsloth (brings in transformers, peft, bitsandbytes, accelerate, trl):
+#   pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
+#
+# Step 3 — remaining:
+#   pip install pydantic numpy
+#
+# GPU VRAM requirements:
+#   Qwen2.5-Coder-1.5B (4-bit) :  ~4 GB   (smoke test)
+#   Qwen2.5-Coder-7B   (4-bit) :  ~8 GB   (recommended)
+#   Qwen2.5-Coder-14B  (4-bit) : ~14 GB   (closer to paper)
+
+torch>=2.1.0
+unsloth
+pydantic>=2.0.0
+numpy>=1.24.0
